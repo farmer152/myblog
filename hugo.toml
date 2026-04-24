@@ -1,4 +1,4 @@
 baseURL = 'https://farmer152.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Project'
+title = '农民之家'
 theme = "PaperMod"
