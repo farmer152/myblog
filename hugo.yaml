@@ -90,15 +90,11 @@ params:
   homeInfoParams:
     Title: "你好😍😍😍"
     Content: |
-      ## 我是
-
-      华中科技大学 人工智能与自动化学院 自动化专业 2025级本科生
-
-      冰岩作坊 游戏组成员
-
-      我想做一辈子游戏
-
-      我正在做BYDNinjaWar😁😁😁😁😁
+      ## 我是<br>
+      华中科技大学 人工智能与自动化学院 自动化专业 2025级本科生<br>
+      冰岩作坊 游戏组成员<br>
+      我想做一辈子游戏<br>
+      我正在做BYDNinjaWar😁😁😁😁😁<br>
     
   socialIcons:
     - name: github
