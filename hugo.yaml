@@ -93,7 +93,7 @@ params:
   homeInfoParams:
     Title: "你好😍😍😍"
     Content: |
-      <img src="/avatar.jpg" alt="头像" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"><span style="font-size: 1.5em; font-weight: bold;">我是</span><br>
+      <span style="font-size: 1.5em; font-weight: bold;">我是</span><img src="/avatar.jpg" alt="头像" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"><br>
       华中科技大学 人工智能与自动化学院 自动化专业 2025级本科生<br>
       冰岩作坊 游戏组成员<br>
       我想做一辈子游戏<br>
