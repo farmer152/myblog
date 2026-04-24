@@ -1,0 +1,71 @@
+{{- define "main" }}
+
+{{- if .Title }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- if not (.Param "disableAnchoredHeadings") }}
+  {{- partial "anchored_headings.html" .Content -}}
+  {{- else }}{{ .Content }}{{ end }}
+</div>
+{{- end }}
+
+{{- /* 日记按 title（时间戳字符串）倒序排序；显示也使用 title */ -}}
+{{- $pages := .RegularPages.ByTitle.Reverse }}
+{{- $paginator := .Paginate $pages }}
+
+<div class="diary-timeline">
+  {{- range $paginator.Pages }}
+  <article class="diary-entry">
+    <header class="diary-entry-header">
+      <div class="diary-entry-date">
+        <time class="diary-entry-ts" datetime="{{ .Title }}">
+          {{- .Title -}}
+        </time>
+      </div>
+      {{- if .Draft }}
+      <span class="diary-entry-draft" title="Draft">Draft</span>
+      {{- end }}
+    </header>
+    <div class="diary-entry-content post-content">
+      {{- if not (.Param "disableAnchoredHeadings") }}
+      {{- partial "anchored_headings.html" .Content -}}
+      {{- else }}{{ .Content }}{{ end }}
+    </div>
+  </article>
+  {{- end }}
+</div>
+
+{{- if gt $paginator.TotalPages 1 }}
+<footer class="page-footer">
+  <nav class="pagination">
+    {{- if $paginator.HasPrev }}
+    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">
+      «&nbsp;{{ i18n "prev_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}
+      {{- sub $paginator.PageNumber 1 }}/{{ $paginator.TotalPages }}
+      {{- end }}
+    </a>
+    {{- end }}
+    {{- if $paginator.HasNext }}
+    <a class="next" href="{{ $paginator.Next.URL | absURL }}">
+      {{- i18n "next_page" }}&nbsp;
+      {{- if (.Param "ShowPageNums") }}
+      {{- add 1 $paginator.PageNumber }}/{{ $paginator.TotalPages }}
+      {{- end }}&nbsp;»
+    </a>
+    {{- end }}
+  </nav>
+</footer>
+{{- end }}
+
+{{- end }}
+
