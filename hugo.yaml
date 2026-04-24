@@ -1,0 +1,124 @@
+baseurl: https://farmer152.github.io/
+languageCode: zh-cn
+title: 农民之家
+theme: PaperMod
+copyright: Farmer
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+  disableXML: true
+
+DefaultContentLanguage: zh-cn
+
+hasCJKLanguage: true
+
+frontmatter:
+  date:
+    - date
+    - publishDate
+    - publishdate
+    - pubdate
+    - published
+    - lastmod
+    - modified
+    - :fileModTime
+    - :filename
+    - :git
+
+languages:
+  zh-cn:
+    languageName: 中文
+    weight: 2
+    title: 农民之家
+
+menu:
+  main:
+    - name: 时间轴
+      url: archives/
+      weight: 5
+    - name: 日记
+      url: diary/
+      weight: 6
+    - name: 分区
+      url: posts/
+      weight: 7
+    - name: 作品
+      url: works/
+      weight: 8
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+taxonomies:
+  category: categories
+
+pagination:
+  disableAliases: false
+  pagerSize: 8
+
+permalinks:
+  post: /p/:slug/
+  page: /:slug/
+
+params:
+  env: production
+  author: Farmer
+
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowShareButtons: false
+  ShowReadingTime: false
+  disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: false
+  ShowTags: false
+  comments: true
+
+  homeInfoParams:
+    Title: "你好😍😍😍"
+    Content:
+      ##我是
+      华中科技大学 人工智能与自动化学院 自动化专业 2025级本科生
+      冰岩作坊 游戏组成员
+      我想做一辈子游戏
+      我正在做BYDNinjaWar😁😁😁😁😁
+    
+  socialIcons:
+    - name: github
+      title: 看 Github
+      url: "https://github.com/farmer152"
+    - name: bilibili
+      title: 看 Bilibili
+      url: "https://space.bilibili.com/402784893"
+    - name: x 
+      title: 看X
+      url: "https://x.com/zhngchuny256304"
+
+  assets:
+    disableHLJS: true
+    favicon: "favicon.ico"
+
+  cover:
+    linkFullImages: false
+    responsiveImages: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
