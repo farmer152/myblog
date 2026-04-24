@@ -1,0 +1,27 @@
+/* 只有在屏幕宽度大于 768px（电脑端）时才开启双栏，手机端保持单栏以保证阅读体验 */
+@media screen and (min-width: 768px) {
+
+    /* 将主容器设为网格布局 */
+    .main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 核心：分为两列，每列等宽 */
+        column-gap: 24px;
+        /* 两列之间的水平间距 */
+        row-gap: 0px;
+        /* 行间距（卡片自带 margin，这里设为 0 即可） */
+    }
+
+    /* 重要：让顶部的“你好/我是”个人简介区域跨越两列，不要被挤到一边 */
+    .profile_inner,
+    .profile_box,
+    .first-entry {
+        grid-column: 1 / -1;
+    }
+
+    /* 调整帖子卡片的宽度，确保它们充满所在的格子 */
+    .post-entry {
+        margin-bottom: 24px;
+        width: 100%;
+    }
+}
