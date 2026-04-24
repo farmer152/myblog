@@ -1,6 +1,7 @@
 +++
 date = '2026-04-24T17:15:52+08:00'
-title = 'My First Post'
+title = '明朝牛逼'
+summary = '异环牛逼'
 +++
 # CCB
 **我想玩原神**
