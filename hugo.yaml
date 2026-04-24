@@ -89,7 +89,7 @@ params:
 
   homeInfoParams:
     Title: "你好😍😍😍"
-    Content:
+    Content: |
       ##我是
       华中科技大学 人工智能与自动化学院 自动化专业 2025级本科生
 
