@@ -39,6 +39,9 @@ languages:
 
 menu:
   main:
+    - name: Home 
+      url: /
+      weight: 1
     - name: 时间轴
       url: archives/
       weight: 5
