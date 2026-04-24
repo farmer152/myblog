@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Project</title>
+    <title>Farmer&#39;s Blog</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Project</description>
+    <description>Recent content on Farmer&#39;s Blog</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 24 Apr 2026 17:15:52 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <copyright>Farmer</copyright>
+    <lastBuildDate>Fri, 24 Apr 2026 21:01:52 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <title>作品</title>
+      <link>http://localhost:1313/works/</link>
+      <pubDate>Fri, 24 Apr 2026 21:01:52 +0800</pubDate>
+      <guid>http://localhost:1313/works/</guid>
+      <description>&lt;h1 id=&#34;游戏作品&#34;&gt;游戏作品&lt;/h1&gt;
+&lt;h2 id=&#34;gamejam&#34;&gt;GameJam&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GlobalGameJam2026 - &lt;a href=&#34;https://globalgamejam.org/games/2026/sacriface-3&#34;&gt;Scariface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;TXGameJam - Genshen（全世界最烂的游戏）&lt;/li&gt;
+&lt;li&gt;全世界最伟大的游戏 - BYDNinjaWar&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>这是我的个人博客</title>
+      <link>http://localhost:1313/posts/post1/</link>
       <pubDate>Fri, 24 Apr 2026 17:15:52 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h1 id=&#34;i-love-you-jesus-christ&#34;&gt;I Love You Jesus Christ&lt;/h1&gt;</description>
+      <guid>http://localhost:1313/posts/post1/</guid>
+      <description>我会慢慢更新的&amp;hellip;&amp;hellip;</description>
     </item>
   </channel>
 </rss>
