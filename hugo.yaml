@@ -1,6 +1,6 @@
 baseurl: https://farmer152.github.io/
 languageCode: zh-cn
-title: 农民之家
+title: Farmer's Blog
 theme: PaperMod
 copyright: Farmer
 
@@ -35,7 +35,7 @@ languages:
   zh-cn:
     languageName: 中文
     weight: 2
-    title: 农民之家
+    title: Farmer's Blog
 
 menu:
   main:
@@ -90,7 +90,7 @@ params:
   homeInfoParams:
     Title: "你好😍😍😍"
     Content: |
-      ## 我是<br>
+      <span style="font-size: 1.5em; font-weight: bold;">我是</span><br>
       华中科技大学 人工智能与自动化学院 自动化专业 2025级本科生<br>
       冰岩作坊 游戏组成员<br>
       我想做一辈子游戏<br>
